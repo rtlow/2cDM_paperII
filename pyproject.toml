@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "cosmosim",
-    "fake-spectra>=2.2.6",
+    "fake-spectra",
     "h5py>=3.15.1",
     "ipykernel>=7.2.0",
     "ipywidgets>=8.1.8",
@@ -19,4 +19,5 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-cosmosim = { path = "../cosmoSim" }
+cosmosim = { path = "../cosmoSim", editable = true }
+fake-spectra = { path = "../../../code/fake_spectra", editable = true }

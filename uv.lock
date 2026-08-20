@@ -30,8 +30,8 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "cosmosim", directory = "../cosmoSim" },
-    { name = "fake-spectra", specifier = ">=2.2.6" },
+    { name = "cosmosim", editable = "../cosmoSim" },
+    { name = "fake-spectra", editable = "../../../code/fake_spectra" },
     { name = "h5py", specifier = ">=3.15.1" },
     { name = "ipykernel", specifier = ">=7.2.0" },
     { name = "ipywidgets", specifier = ">=8.1.8" },
@@ -271,7 +271,7 @@ wheels = [
 [[package]]
 name = "cosmosim"
 version = "0.1.0"
-source = { directory = "../cosmoSim" }
+source = { editable = "../cosmoSim" }
 dependencies = [
     { name = "numpy" },
     { name = "scipy" },
@@ -333,9 +333,8 @@ wheels = [
 
 [[package]]
 name = "fake-spectra"
-version = "2.2.6"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/66/46/d99bdbdc0d45628681fac3a61f683c92862505e1c15da50c53268e5d245a/fake_spectra-2.2.6.tar.gz", hash = "sha256:eb025c6062abec7513af2a7e425252dab82548c3ddbf1ed98f52deb3addfa684", size = 14893522, upload-time = "2026-03-26T20:17:21.252Z" }
+version = "2.3.0"
+source = { editable = "../../../code/fake_spectra" }
 
 [[package]]
 name = "fonttools"
